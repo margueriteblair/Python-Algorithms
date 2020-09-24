@@ -5,8 +5,11 @@ def find_longest_word_length(str):
         print(word, len(word))
         if len(word) > len(longest):
             longest = word
-            continue
-    print(longest)
+    print(len(longest))
 
-find_longest_word_length("The fox jumped over the rabbit")
+# find_longest_word_length("The fox jumped over the rabbit")
+
+resStr = input("Please input in a string: ")
+find_longest_word_length(resStr)
+
 
