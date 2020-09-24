@@ -12,4 +12,10 @@ def find_longest_word_length(str):
 resStr = input("Please input in a string: ")
 find_longest_word_length(resStr)
 
+def longestWord3():
+    string = input('Enter sentence to find longest word\n')
+    strSplit = string.split()
+    strSplit.sort(key = len)
+    print(strSplit[-1]) #-1 index will be the last element in list
+
 
