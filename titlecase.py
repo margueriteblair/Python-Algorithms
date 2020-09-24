@@ -4,7 +4,11 @@ def titlecase(str):
     titleCaseArr = []
     for word in lowerstr:
         word = word[0].upper() + word[1:]
+        print(word)
         titleCaseArr.append(word)
     print(" ".join(titleCaseArr))
 
-titlecase("I'm a little tea pot")
+titlecase("i'm a little tea pot")
+
+resString = input("What string would you like title cased? ")
+titlecase(resString)
