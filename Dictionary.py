@@ -19,7 +19,7 @@ while True:
 
 
 n = int(input())
-phone_book = dict(input().split() for _ in range(n))
+phone_book = dict(input().split() for i in range(n))
 while True:
     try:
         name = input()
