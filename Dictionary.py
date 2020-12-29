@@ -9,3 +9,19 @@ while True:
             print('Not found')
     except:
         break
+
+
+N = int(input())
+arr_map = {}
+for i in range(N):
+    x = input().split()
+    arr_map[x[0]] = x[1]
+while True:
+    try:
+        inp = input()
+        if (arr_map.__contains__(inp)):
+            print(inp + "="+arr_map.get(inp))
+        else: 
+            print("Not found")
+    except EOFError as e:
+        break
