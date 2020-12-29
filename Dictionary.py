@@ -10,7 +10,7 @@ while True:
     except:
         break
 
-
+#my version:
 N = int(input())
 arr_map = {}
 for i in range(N):
