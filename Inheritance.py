@@ -28,21 +28,18 @@ class Student(Person):
     #
     # Write your function here
     def calculate(self):
-        sum = 0
-        for score in self.scores:
-            sum += score
-        average = sum/len(self.scores)
-        if (average >= 90.0 & average <= 100.0):
-            return ("O")
-        elif (average < 90.0 & average >= 80.0):
-            return("E")
-        elif (average < 80.0 & average >= 70.0):
-            return("A")
-        elif (average >= 55.0 & average < 70.0):
-            return("P")
-        elif (average < 55.0 & average >= 40.0):
-            return("D")
-        else:
-            return("T")
+        average = sum(self.scores)/len(self.scores)
+        if average < 40:
+            return('T')
+        elif average >= 40 and average < 55:
+            return('D')
+        elif average >= 55 and average < 70:
+            return('P')
+        elif average >= 70 and average < 80:
+            return('A')
+        elif average >= 80 and average < 90:
+            return('E')
+        elif average >= 90 and average <= 100:
+            return('O')
 
 line = input().split()
